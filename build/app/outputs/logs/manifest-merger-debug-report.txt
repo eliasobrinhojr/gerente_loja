@@ -1,17 +1,17 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
-MERGED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
+ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
+MERGED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/multidex-2.0.0.aar/d4d5626ab425d354f651280d463ccf7d/AndroidManifest.xml:17:1-22:12
-MERGED from [:image_cropper] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_cropper/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
-MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
-MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:image_cropper] /home/sys00/Documentos/mobile/gerente_loja/build/image_cropper/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-22:12
+MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
+MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.firebase:firebase-core:16.0.9] /home/sys00/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/1ed9d1c20f1dd3a6650d3fdcedf7b8f8/AndroidManifest.xml:2:1-9:12
 MERGED from [com.github.yalantis:ucrop:2.2.3] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.3.aar/3197652e64fe1af9ca377bb1dc4e5ac6/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/e10ef19e668e49d6c9315d294839af0d/AndroidManifest.xml:17:1-42:12
@@ -71,35 +71,35 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/sys00/.gradle/c
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/interpolator-1.0.0.aar/09c14c3ada43394b81cd65efeaa86667/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/sys00/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/c5095b21c929cfa5ccac2e2989921cfc/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/sys00/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/372970e091cc73d75509a60043d2a941/AndroidManifest.xml:2:1-11:12
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml:1:1-7:12
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml:1:1-7:12
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml:1:1-7:12
 	package
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:2:5-42
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:2:5-42
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:1:1-33:12
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:1:11-69
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:1:11-69
 application
-ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:9:5-32:19
-MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
-MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:9:5-32:19
+MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-20:19
+MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-13:19
 MERGED from [com.google.firebase:firebase-core:16.0.9] /home/sys00/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/1ed9d1c20f1dd3a6650d3fdcedf7b8f8/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-core:16.0.9] /home/sys00/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/1ed9d1c20f1dd3a6650d3fdcedf7b8f8/AndroidManifest.xml:7:5-20
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/e10ef19e668e49d6c9315d294839af0d/AndroidManifest.xml:23:5-40:19
@@ -151,59 +151,59 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/sys00
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.0.2] /home/sys00/.gradle/caches/transforms-1/files-1.1/core-1.0.2.aar/d27891b292ef8d9cf0e9e80de7ca4f4b/AndroidManifest.xml:22:18-86
 	android:label
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:11:9-37
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:11:9-37
 	android:icon
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:12:9-43
 	android:name
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:10:9-57
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:10:9-57
 activity#br.com.eliasjr.gerente_loja.MainActivity
-ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:13:9-31:20
+ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:13:9-31:20
 	android:launchMode
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:15:13-43
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:15:13-43
 	android:hardwareAccelerated
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:18:13-47
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:18:13-47
 	android:windowSoftInputMode
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:19:13-55
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:19:13-55
 	android:configChanges
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:17:13-144
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:17:13-144
 	android:theme
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:16:13-47
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:16:13-47
 	android:name
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:14:13-41
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:14:13-41
 meta-data#io.flutter.app.android.SplashScreenUntilFirstFrame
-ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:24:13-26:40
+ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:24:13-26:40
 	android:value
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:26:17-37
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:26:17-37
 	android:name
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:25:17-82
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:25:17-82
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:27:13-30:29
+ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:27:13-30:29
 action#android.intent.action.MAIN
-ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:28:17-68
+ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:28:17-68
 	android:name
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:28:25-66
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:29:17-76
+ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:29:17-76
 	android:name
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml:29:27-74
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml:29:27-74
 uses-sdk
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml
 MERGED from [androidx.multidex:multidex:2.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/multidex-2.0.0.aar/d4d5626ab425d354f651280d463ccf7d/AndroidManifest.xml:20:5-43
 MERGED from [androidx.multidex:multidex:2.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/multidex-2.0.0.aar/d4d5626ab425d354f651280d463ccf7d/AndroidManifest.xml:20:5-43
-MERGED from [:image_cropper] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_cropper/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_cropper] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_cropper/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
-MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_cropper] /home/sys00/Documentos/mobile/gerente_loja/build/image_cropper/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_cropper] /home/sys00/Documentos/mobile/gerente_loja/build/image_cropper/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.9] /home/sys00/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/1ed9d1c20f1dd3a6650d3fdcedf7b8f8/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-core:16.0.9] /home/sys00/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.9.aar/1ed9d1c20f1dd3a6650d3fdcedf7b8f8/AndroidManifest.xml:5:5-44
 MERGED from [com.github.yalantis:ucrop:2.2.3] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.3.aar/3197652e64fe1af9ca377bb1dc4e5ac6/AndroidManifest.xml:7:5-9:41
@@ -322,16 +322,16 @@ MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/sys0
 MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /home/sys00/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/c5095b21c929cfa5ccac2e2989921cfc/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/sys00/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/372970e091cc73d75509a60043d2a941/AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /home/sys00/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/372970e091cc73d75509a60043d2a941/AndroidManifest.xml:7:5-9:41
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml
-INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml
+INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/main/AndroidManifest.xml
-		INJECTED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml:6:5-66
+ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml:6:5-66
 MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/cf77ff9a580d45119a829517e87e22f4/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/cf77ff9a580d45119a829517e87e22f4/AndroidManifest.xml:14:5-67
 MERGED from [com.google.firebase:firebase-storage:17.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-storage-17.0.0.aar/74f4fd5274d2ded3c734e644ffd4f439/AndroidManifest.xml:27:5-67
@@ -347,15 +347,15 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:16.5.0] /home
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/a13e244a4df5fc9bcf5604bd986e9f17/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:16.5.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-play-services-measurement-sdk-api-16.5.0.aar/a13e244a4df5fc9bcf5604bd986e9f17/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/android/app/src/debug/AndroidManifest.xml:6:22-64
+		ADDED from /home/sys00/Documentos/mobile/gerente_loja/android/app/src/debug/AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
-ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-12:19
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/e10ef19e668e49d6c9315d294839af0d/AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-auth:17.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/e10ef19e668e49d6c9315d294839af0d/AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-firestore:19.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-firestore-19.0.0.aar/cf77ff9a580d45119a829517e87e22f4/AndroidManifest.xml:17:9-21:19
@@ -369,55 +369,55 @@ MERGED from [com.google.firebase:firebase-iid:17.1.2] /home/sys00/.gradle/caches
 	android:exported
 		ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/e10ef19e668e49d6c9315d294839af0d/AndroidManifest.xml:35:13-37
 	android:name
-		ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
+		ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:8:18-89
 meta-data#com.google.firebase.components:io.flutter.plugins.firebaseauth.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
+		ADDED from [:firebase_auth] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_auth/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-122
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
+ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-80
 	android:name
-		ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
+		ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
+ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
+		ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-78
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
-ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
+ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:11:9-19:20
 	android:grantUriPermissions
-		ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
+		ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-47
 	android:authorities
-		ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
+		ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-74
 	android:exported
-		ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
+		ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
+		ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-82
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
+ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-18:75
 	android:resource
-		ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
+		ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:18:17-72
 	android:name
-		ADDED from [:image_picker] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
+		ADDED from [:image_picker] /home/sys00/Documentos/mobile/gerente_loja/build/image_picker/intermediates/library_manifest/debug/AndroidManifest.xml:17:17-67
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar
-ADDED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:cloud_firestore] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
+		ADDED from [:cloud_firestore] /home/sys00/Documentos/mobile/gerente_loja/build/cloud_firestore/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-133
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_core] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
+		ADDED from [:firebase_core] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_core/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-123
 meta-data#com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
+ADDED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-11:85
 	android:value
-		ADDED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
+		ADDED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:11:17-82
 	android:name
-		ADDED from [:firebase_storage] /home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
+		ADDED from [:firebase_storage] /home/sys00/Documentos/mobile/gerente_loja/build/firebase_storage/intermediates/library_manifest/debug/AndroidManifest.xml:10:17-126
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:17.0.0] /home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-firebase-auth-17.0.0.aar/e10ef19e668e49d6c9315d294839af0d/AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents

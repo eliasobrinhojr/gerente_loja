@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "outputFile": "/home/sys00/Documentos/mobile/gerente_loja/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
             "map": [
                 {
                     "source": "/home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.3.aar/3197652e64fe1af9ca377bb1dc4e5ac6/res/values-zh/values-zh.xml",

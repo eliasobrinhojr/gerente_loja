@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "/home/sys00/Documentos/mobile/gerente_loja/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v21/values-v21.xml",
             "map": [
                 {
                     "source": "/home/sys00/.gradle/caches/transforms-1/files-1.1/media-1.0.0.aar/212259d625efacfc89cd9690fda72bf4/res/values-v21/values-v21.xml",
