@@ -1,0 +1,14 @@
+
+\.idea/
+
+android/\.gradle/4\.10\.2/fileHashes/
+
+android/\.gradle/4\.10\.2/javaCompile/
+
+android/\.gradle/4\.10\.2/taskHistory/
+
+android/\.gradle/buildOutputCleanup/
+
+build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/appcompat/
+
+build/
