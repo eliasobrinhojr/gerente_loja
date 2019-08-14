@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/sys00/Documentos/mobile/curso_flutter/gerente_loja/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zh/values-zh.xml",
+            "map": [
+                {
+                    "source": "/home/sys00/.gradle/caches/transforms-1/files-1.1/jetified-ucrop-2.2.3.aar/3197652e64fe1af9ca377bb1dc4e5ac6/res/values-zh/values-zh.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,109,163",
+                        "endColumns": "53,53,46",
+                        "endOffsets": "104,158,205"
+                    }
+                }
+            ]
+        }
+    ]
+}
