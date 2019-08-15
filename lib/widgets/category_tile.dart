@@ -12,15 +12,52 @@ class CategoryTile extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
       child: Card(
         child: ExpansionTile(
-            leading: CircleAvatar(
-              backgroundImage: NetworkImage(category.data["icon"]),
-              backgroundColor: Colors.transparent,
+          leading: CircleAvatar(
+            backgroundImage: NetworkImage(category.data["icon"]),
+            backgroundColor: Colors.transparent,
+          ),
+          title: Text(
+            category.data["title"],
+            style:
+                TextStyle(color: Colors.grey[850], fontWeight: FontWeight.w500),
+          ),
+          children: <Widget>[
+            FutureBuilder<QuerySnapshot>(
+              future: category.reference.collection("items").getDocuments(),
+              builder: (context, snapshot) {
+                if (!snapshot.hasData) {
+                  return Container();
+                } else {
+                  return Column(
+                    children: snapshot.data.documents.map((doc) {
+                      return ListTile(
+                        leading: CircleAvatar(
+                          backgroundImage: NetworkImage(doc.data["images"][0]),
+                          backgroundColor: Colors.transparent,
+                        ),
+                        title: Text(doc.data["title"]),
+                        trailing:
+                            Text("R\$${doc.data["price"].toStringAsFixed(2)}"),
+                        onTap: () {},
+                      );
+                    }).toList()
+                      ..add(ListTile(
+                        leading: CircleAvatar(
+                          backgroundColor: Colors.transparent,
+                          child: Icon(
+                            Icons.add,
+                            color: Colors.pinkAccent,
+                          ),
+                        ),
+                        title: Text("Adicionar"),
+                        onTap: () {},
+                      )),
+                  );
+                }
+              },
             ),
-            title: Text(
-              category.data["title"],
-              style: TextStyle(
-                  color: Colors.grey[850], fontWeight: FontWeight.w500),
-            )),
+          ],
+        ),
       ),
     );
   }
