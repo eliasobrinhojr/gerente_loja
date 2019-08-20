@@ -40,9 +40,11 @@ class CategoryTile extends StatelessWidget {
                         trailing:
                             Text("R\$${doc.data["price"].toStringAsFixed(2)}"),
                         onTap: () {
-                          Navigator.of(context).push(
-                            MaterialPageRoute(builder: (context) => ProductScreen(''))
-                          );
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => ProductScreen(
+                                    categoryId: category.documentID,
+                                    product: doc,
+                                  )));
                         },
                       );
                     }).toList()
@@ -56,9 +58,8 @@ class CategoryTile extends StatelessWidget {
                         ),
                         title: Text("Adicionar"),
                         onTap: () {
-                          Navigator.of(context).push(
-                              MaterialPageRoute(builder: (context) => ProductScreen(''))
-                          );
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => ProductScreen(categoryId: category.documentID)));
                         },
                       )),
                   );
