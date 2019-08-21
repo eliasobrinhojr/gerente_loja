@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:gerente_loja/blocs/product_bloc.dart';
+import 'package:gerente_loja/validators/product_validator.dart';
 import 'package:gerente_loja/widgets/images_widget.dart';
 
 class ProductScreen extends StatefulWidget {
@@ -13,9 +14,10 @@ class ProductScreen extends StatefulWidget {
   _ProductScreenState createState() => _ProductScreenState(categoryId, product);
 }
 
-class _ProductScreenState extends State<ProductScreen> {
+class _ProductScreenState extends State<ProductScreen> with ProductValidator {
   final ProductBloc _productBloc;
   final _formKey = GlobalKey<FormState>();
+  final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   _ProductScreenState(String categoryId, DocumentSnapshot product)
       : _productBloc = ProductBloc(categoryId: categoryId, product: product);
@@ -30,6 +32,7 @@ class _ProductScreenState extends State<ProductScreen> {
     }
 
     return Scaffold(
+      key: _scaffoldKey,
       backgroundColor: Colors.grey[850],
       appBar: AppBar(
         elevation: 0,
@@ -41,7 +44,9 @@ class _ProductScreenState extends State<ProductScreen> {
           ),
           IconButton(
             icon: Icon(Icons.save),
-            onPressed: () {},
+            onPressed: () {
+              saveProduct();
+            },
           ),
         ],
       ),
@@ -62,37 +67,64 @@ class _ProductScreenState extends State<ProductScreen> {
                   ImagesWidget(
                     context: context,
                     initialValue: snapshot.data["images"],
-                    onSaved: (list) {},
-                    validator: (list) {},
+                    onSaved: _productBloc.saveImages,
+                    validator: validateImages,
                   ),
                   TextFormField(
                     initialValue: snapshot.data["title"],
                     style: _fieldStyle,
                     decoration: _buildDecoration("Titulo"),
-                    onSaved: (t) {},
-                    validator: (t) {},
+                    onSaved: _productBloc.saveTitle,
+                    validator: validateTitle,
                   ),
                   TextFormField(
                     initialValue: snapshot.data["description"],
                     style: _fieldStyle,
                     decoration: _buildDecoration("Descrição"),
                     maxLines: 6,
-                    onSaved: (t) {},
-                    validator: (t) {},
+                    onSaved: _productBloc.saveDescription,
+                    validator: validateDescription,
                   ),
                   TextFormField(
                     initialValue: snapshot.data["price"]?.toStringAsFixed(2),
                     style: _fieldStyle,
                     decoration: _buildDecoration("Preço"),
-                    onSaved: (t) {},
+                    onSaved: _productBloc.savePrice,
                     keyboardType:
                         TextInputType.numberWithOptions(decimal: true),
-                    validator: (t) {},
+                    validator: validatePrice,
                   ),
                 ],
               );
             }),
       ),
     );
+  }
+
+  void saveProduct() async {
+    if (_formKey.currentState.validate()) {
+      _formKey.currentState.save();
+      _scaffoldKey.currentState.showSnackBar(SnackBar(
+        content: Text(
+          "Salvando Produto...",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.pinkAccent,
+        duration: Duration(minutes: 1),
+      ));
+
+      bool success = await _productBloc.saveProduct();
+
+      _scaffoldKey.currentState.removeCurrentSnackBar();
+
+      _scaffoldKey.currentState.showSnackBar(SnackBar(
+        content: Text(
+          success ? "Produto salvo !" : "Erro ao salvar Produto !",
+          style: TextStyle(color: Colors.white),
+        ),
+        backgroundColor: Colors.pinkAccent,
+        duration: Duration(minutes: 1),
+      ));
+    }
   }
 }

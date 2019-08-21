@@ -30,6 +30,27 @@ class ProductBloc extends BlocBase {
     _dataController.add(unsavedData);
   }
 
+  void saveTitle(String title) {
+    unsavedData['title'] = title;
+  }
+
+  void saveDescription(String description) {
+    unsavedData['description'] = description;
+  }
+
+  void savePrice(String price) {
+    unsavedData['price'] = double.parse(price);
+  }
+
+  void saveImages(List images) {
+    unsavedData['images'] = images;
+  }
+
+  Future<bool> saveProduct() async {
+    await Future.delayed(Duration(seconds: 3));
+    return true;
+  }
+
   @override
   void dispose() {
     _dataController.close();
