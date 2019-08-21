@@ -12,3 +12,5 @@ android/\.gradle/buildOutputCleanup/
 build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r/androidx/appcompat/
 
 build/
+
+android/local\.properties
