@@ -42,61 +42,80 @@ class _ProductScreenState extends State<ProductScreen> with ProductValidator {
             icon: Icon(Icons.remove),
             onPressed: () {},
           ),
-          IconButton(
-            icon: Icon(Icons.save),
-            onPressed: () {
-              saveProduct();
-            },
-          ),
+          StreamBuilder<bool>(
+              stream: _productBloc.outLoading,
+              initialData: false,
+              builder: (context, snapshot) {
+                return IconButton(
+                  icon: Icon(Icons.save),
+                  onPressed: snapshot.data ? null : saveProduct,
+                );
+              }),
         ],
       ),
-      body: Form(
-        key: _formKey,
-        child: StreamBuilder<Map>(
-            stream: _productBloc.outData,
-            builder: (context, snapshot) {
-              if (!snapshot.hasData) return Container();
+      body: Stack(
+        children: <Widget>[
+          Form(
+            key: _formKey,
+            child: StreamBuilder<Map>(
+                stream: _productBloc.outData,
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) return Container();
 
-              return ListView(
-                padding: EdgeInsets.all(16.0),
-                children: <Widget>[
-                  Text(
-                    "Imagens",
-                    style: TextStyle(color: Colors.grey, fontSize: 12.0),
+                  return ListView(
+                    padding: EdgeInsets.all(16.0),
+                    children: <Widget>[
+                      Text(
+                        "Imagens",
+                        style: TextStyle(color: Colors.grey, fontSize: 12.0),
+                      ),
+                      ImagesWidget(
+                        context: context,
+                        initialValue: snapshot.data["images"],
+                        onSaved: _productBloc.saveImages,
+                        validator: validateImages,
+                      ),
+                      TextFormField(
+                        initialValue: snapshot.data["title"],
+                        style: _fieldStyle,
+                        decoration: _buildDecoration("Titulo"),
+                        onSaved: _productBloc.saveTitle,
+                        validator: validateTitle,
+                      ),
+                      TextFormField(
+                        initialValue: snapshot.data["description"],
+                        style: _fieldStyle,
+                        decoration: _buildDecoration("Descrição"),
+                        maxLines: 6,
+                        onSaved: _productBloc.saveDescription,
+                        validator: validateDescription,
+                      ),
+                      TextFormField(
+                        initialValue:
+                            snapshot.data["price"]?.toStringAsFixed(2),
+                        style: _fieldStyle,
+                        decoration: _buildDecoration("Preço"),
+                        onSaved: _productBloc.savePrice,
+                        keyboardType:
+                            TextInputType.numberWithOptions(decimal: true),
+                        validator: validatePrice,
+                      ),
+                    ],
+                  );
+                }),
+          ),
+          StreamBuilder<bool>(
+              stream: _productBloc.outLoading,
+              initialData: false,
+              builder: (context, snapshot) {
+                return IgnorePointer(
+                  ignoring: !snapshot.data,
+                  child: Container(
+                    color: snapshot.data ? Colors.black54 : Colors.transparent,
                   ),
-                  ImagesWidget(
-                    context: context,
-                    initialValue: snapshot.data["images"],
-                    onSaved: _productBloc.saveImages,
-                    validator: validateImages,
-                  ),
-                  TextFormField(
-                    initialValue: snapshot.data["title"],
-                    style: _fieldStyle,
-                    decoration: _buildDecoration("Titulo"),
-                    onSaved: _productBloc.saveTitle,
-                    validator: validateTitle,
-                  ),
-                  TextFormField(
-                    initialValue: snapshot.data["description"],
-                    style: _fieldStyle,
-                    decoration: _buildDecoration("Descrição"),
-                    maxLines: 6,
-                    onSaved: _productBloc.saveDescription,
-                    validator: validateDescription,
-                  ),
-                  TextFormField(
-                    initialValue: snapshot.data["price"]?.toStringAsFixed(2),
-                    style: _fieldStyle,
-                    decoration: _buildDecoration("Preço"),
-                    onSaved: _productBloc.savePrice,
-                    keyboardType:
-                        TextInputType.numberWithOptions(decimal: true),
-                    validator: validatePrice,
-                  ),
-                ],
-              );
-            }),
+                );
+              }),
+        ],
       ),
     );
   }
@@ -123,7 +142,6 @@ class _ProductScreenState extends State<ProductScreen> with ProductValidator {
           style: TextStyle(color: Colors.white),
         ),
         backgroundColor: Colors.pinkAccent,
-        duration: Duration(minutes: 1),
       ));
     }
   }
