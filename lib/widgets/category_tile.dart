@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:gerente_loja/screens/product_screen.dart';
+import 'package:gerente_loja/widgets/edit_category_dialog.dart';
 
 class CategoryTile extends StatelessWidget {
   final DocumentSnapshot category;
@@ -13,9 +14,14 @@ class CategoryTile extends StatelessWidget {
       margin: EdgeInsets.symmetric(horizontal: 16.0, vertical: 4.0),
       child: Card(
         child: ExpansionTile(
-          leading: CircleAvatar(
-            backgroundImage: NetworkImage(category.data["icon"]),
-            backgroundColor: Colors.transparent,
+          leading: GestureDetector(
+            onTap: (){
+              showDialog(context: context, builder: (context) => EditCategoryDialog());
+            },
+            child: CircleAvatar(
+              backgroundImage: NetworkImage(category.data["icon"]),
+              backgroundColor: Colors.transparent,
+            ),
           ),
           title: Text(
             category.data["title"],
@@ -59,7 +65,8 @@ class CategoryTile extends StatelessWidget {
                         title: Text("Adicionar"),
                         onTap: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => ProductScreen(categoryId: category.documentID)));
+                              builder: (context) => ProductScreen(
+                                  categoryId: category.documentID)));
                         },
                       )),
                   );
