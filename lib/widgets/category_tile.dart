@@ -15,8 +15,12 @@ class CategoryTile extends StatelessWidget {
       child: Card(
         child: ExpansionTile(
           leading: GestureDetector(
-            onTap: (){
-              showDialog(context: context, builder: (context) => EditCategoryDialog());
+            onTap: () {
+              showDialog(
+                  context: context,
+                  builder: (context) => EditCategoryDialog(
+                        category: category,
+                      ));
             },
             child: CircleAvatar(
               backgroundImage: NetworkImage(category.data["icon"]),

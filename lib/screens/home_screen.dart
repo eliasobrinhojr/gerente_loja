@@ -6,6 +6,7 @@ import 'package:gerente_loja/blocs/user_bloc.dart';
 import 'package:gerente_loja/tabs/orders_tab.dart';
 import 'package:gerente_loja/tabs/products_tab.dart';
 import 'package:gerente_loja/tabs/users_tab.dart';
+import 'package:gerente_loja/widgets/edit_category_dialog.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -65,11 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   _page = p;
                 });
               },
-              children: <Widget>[
-                UsersTab(),
-                OrdersTab(),
-                ProductsTab()
-              ],
+              children: <Widget>[UsersTab(), OrdersTab(), ProductsTab()],
             ),
           ),
         ),
@@ -116,7 +113,14 @@ class _HomeScreenState extends State<HomeScreen> {
         );
         break;
       case 2:
-        return null;
+        return FloatingActionButton(
+          child: Icon(Icons.add),
+          backgroundColor: Colors.pinkAccent,
+          onPressed: () {
+            showDialog(
+                context: context, builder: (context) => EditCategoryDialog());
+          },
+        );
         break;
       default:
         return null;
