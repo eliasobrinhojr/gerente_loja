@@ -80,12 +80,17 @@ class _EditCategoryDialogState extends State<EditCategoryDialog> {
                 StreamBuilder<bool>(
                     stream: _categoryBloc.outDelete,
                     builder: (context, snapshot) {
-                      if (!snapshot.hasData)return Container();
+                      if (!snapshot.hasData) return Container();
 
                       return FlatButton(
                         child: Text("Excluir"),
                         textColor: Colors.red,
-                        onPressed: snapshot.data ? () {} : null,
+                        onPressed: snapshot.data
+                            ? () {
+                                _categoryBloc.delete();
+                                Navigator.of(context).pop();
+                              }
+                            : null,
                       );
                     }),
                 StreamBuilder<bool>(
@@ -93,7 +98,12 @@ class _EditCategoryDialogState extends State<EditCategoryDialog> {
                     builder: (context, snapshot) {
                       return FlatButton(
                         child: Text("Salvar"),
-                        onPressed: snapshot.hasData ? () {} : null,
+                        onPressed: snapshot.hasData
+                            ? () async {
+                                await _categoryBloc.saveData();
+                                Navigator.of(context).pop();
+                              }
+                            : null,
                       );
                     }),
               ],
