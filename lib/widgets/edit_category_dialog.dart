@@ -1,12 +1,27 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:gerente_loja/blocs/category_bloc.dart';
 
-class EditCategoryDialog extends StatelessWidget {
-  final CategoryBloc _categoryBloc;
+class EditCategoryDialog extends StatefulWidget {
+  final DocumentSnapshot category;
 
-  EditCategoryDialog({DocumentSnapshot category})
-      : _categoryBloc = CategoryBloc(category: category);
+  EditCategoryDialog({this.category});
+
+  @override
+  _EditCategoryDialogState createState() =>
+      _EditCategoryDialogState(category: category);
+}
+
+class _EditCategoryDialogState extends State<EditCategoryDialog> {
+  final CategoryBloc _categoryBloc;
+  final TextEditingController _controller;
+
+  _EditCategoryDialogState({DocumentSnapshot category})
+      : _categoryBloc = CategoryBloc(category: category),
+        _controller = TextEditingController(
+            text: category != null ? category.data["title"] : "");
 
   @override
   Widget build(BuildContext context) {
@@ -17,9 +32,29 @@ class EditCategoryDialog extends StatelessWidget {
           children: <Widget>[
             ListTile(
               leading: GestureDetector(
-                child: CircleAvatar(),
+                child: StreamBuilder(
+                    stream: _categoryBloc.outImage,
+                    builder: (context, snapshot) {
+                      if (snapshot.data != null)
+                        return CircleAvatar(
+                          child: snapshot.data is File
+                              ? Image.file(
+                                  snapshot.data,
+                                  fit: BoxFit.cover,
+                                )
+                              : Image.network(
+                                  snapshot.data,
+                                  fit: BoxFit.cover,
+                                ),
+                          backgroundColor: Colors.transparent,
+                        );
+                      else
+                        return Icon(Icons.image);
+                    }),
               ),
-              title: TextField(),
+              title: TextField(
+                controller: _controller,
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -27,7 +62,8 @@ class EditCategoryDialog extends StatelessWidget {
                 StreamBuilder<bool>(
                     stream: _categoryBloc.outDelete,
                     builder: (context, snapshot) {
-                      if (!snapshot.data) return Container();
+                      if (snapshot.data == null || !snapshot.data)
+                        return Container();
 
                       return FlatButton(
                         child: Text("Excluir"),
