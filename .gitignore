@@ -14,3 +14,7 @@ build/app/generated/not_namespaced_r_class_sources/debug/processDebugResources/r
 build/
 
 android/local\.properties
+
+.packages
+
+.flutter-plugins
