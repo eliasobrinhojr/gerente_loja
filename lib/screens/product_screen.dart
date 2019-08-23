@@ -86,7 +86,6 @@ class _ProductScreenState extends State<ProductScreen> with ProductValidator {
                 stream: _productBloc.outData,
                 builder: (context, snapshot) {
                   if (!snapshot.hasData) return Container();
-
                   return ListView(
                     padding: EdgeInsets.all(16.0),
                     children: <Widget>[

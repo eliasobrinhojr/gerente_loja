@@ -33,7 +33,7 @@ class ProductBloc extends BlocBase {
         "description": null,
         "price": null,
         "images": [],
-        "size": []
+        "sizes": []
       };
       _createdController.add(false);
     }
