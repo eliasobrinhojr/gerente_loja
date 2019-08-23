@@ -5,7 +5,6 @@ import 'package:gerente_loja/screens/login_screen.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
   final NotificationBloc _notificationBloc = NotificationBloc();
 
   MyApp() {
@@ -18,7 +17,6 @@ class MyApp extends StatelessWidget {
         title: "EA-PIZZA",
         theme: ThemeData(primaryColor: Colors.pinkAccent),
         debugShowCheckedModeBanner: false,
-        home: LoginScreen()
-    );
+        home: LoginScreen());
   }
 }

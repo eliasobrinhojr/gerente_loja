@@ -15,18 +15,19 @@ class _LoginScreenState extends State<LoginScreen> {
   void initState() {
     super.initState();
 
-    _loginBloc.outState.listen((state){
-      switch(state){
+    _loginBloc.outState.listen((state) {
+      switch (state) {
         case LoginState.SUCCESS:
           Navigator.of(context).pushReplacement(
-              MaterialPageRoute(builder: (context)=>HomeScreen())
-          );
+              MaterialPageRoute(builder: (context) => HomeScreen()));
           break;
         case LoginState.FAIL:
-          showDialog(context: context, builder: (context)=>AlertDialog(
-            title: Text("Erro"),
-            content: Text("Você não possui os privilégios necessários"),
-          ));
+          showDialog(
+              context: context,
+              builder: (context) => AlertDialog(
+                    title: Text("Erro"),
+                    content: Text("Você não possui os privilégios necessários"),
+                  ));
           break;
         case LoginState.LOADING:
         case LoginState.IDLE:

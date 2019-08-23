@@ -45,7 +45,8 @@ class OrderTile extends StatelessWidget {
                       var index = order.data["products"].indexOf(p);
 
                       return ListTile(
-                        title: Text(p["product"]["title"] + " " + "\$${p["size"]}"),
+                        title: Text(
+                            p["product"]["title"] + " " + "\$${p["size"]}"),
                         subtitle: Text(p["category"] + "/" + p["pid"]),
                         trailing: Text(
                           "x${p["quantity"].toString()}",

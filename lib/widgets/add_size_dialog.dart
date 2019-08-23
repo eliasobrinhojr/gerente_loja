@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AddSizeDialog extends StatelessWidget {
-
   final _controller = TextEditingController();
 
   @override
