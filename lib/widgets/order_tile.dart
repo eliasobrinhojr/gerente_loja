@@ -42,11 +42,13 @@ class OrderTile extends StatelessWidget {
                   Column(
                     mainAxisSize: MainAxisSize.min,
                     children: order.data["products"].map<Widget>((p) {
+                      var index = order.data["products"].indexOf(p);
+
                       return ListTile(
-                        title: Text(p["product"]["title"] + " " + p["size"]),
+                        title: Text(p["product"]["title"] + " " + "\$${p["size"]}"),
                         subtitle: Text(p["category"] + "/" + p["pid"]),
                         trailing: Text(
-                          p["quantity"].toString(),
+                          "x${p["quantity"].toString()}",
                           style: TextStyle(fontSize: 20.0),
                         ),
                         contentPadding: EdgeInsets.zero,
