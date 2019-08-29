@@ -46,7 +46,7 @@ class OrderTile extends StatelessWidget {
 
                       return ListTile(
                         title: Text(
-                            p["product"]["title"] + " " + "\$${p["size"]}"),
+                            p["product"]["title"] + " " + "${p["size"]}"),
                         subtitle: Text(p["category"] + "/" + p["pid"]),
                         trailing: Text(
                           "x${p["quantity"].toString()}",
@@ -60,7 +60,7 @@ class OrderTile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       FlatButton(
-                        onPressed: order.data["status"] > 1
+                        onPressed: order.data["status"] == 0 || order.data["status"] > 1
                             ? () {
                                 Firestore.instance
                                     .collection("users")
@@ -75,7 +75,7 @@ class OrderTile extends StatelessWidget {
                         child: Text("Excluir"),
                       ),
                       FlatButton(
-                        onPressed: order.data["status"] > 1
+                        onPressed: order.data["status"] > 0
                             ? () {
                                 order.reference.updateData(
                                     {"status": order.data["status"] - 1});
