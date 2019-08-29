@@ -185,6 +185,8 @@ class _ProductScreenState extends State<ProductScreen> with ProductValidator {
         ),
         backgroundColor: Colors.pinkAccent,
       ));
+
+      if(success) Navigator.of(context).pop();
     }
   }
 }

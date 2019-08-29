@@ -34,7 +34,7 @@ class ProductSizes extends FormField<List> {
                                       color: Colors.pinkAccent, width: 3)),
                               alignment: Alignment.center,
                               child: Text(
-                                s,
+                                s["size"],
                                 style: TextStyle(color: Colors.white),
                               ),
                             ),
@@ -42,7 +42,7 @@ class ProductSizes extends FormField<List> {
                       .toList()
                         ..add(GestureDetector(
                           onTap: () async {
-                            String size = await showDialog(
+                            Map size = await showDialog(
                                 context: context,
                                 builder: (context) => AddSizeDialog());
 

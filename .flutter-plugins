@@ -1,7 +1,7 @@
-cloud_firestore=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.12.9/
-firebase_auth=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.14.0+1/
-firebase_core=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.0+8/
-firebase_storage=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-3.0.5/
-image_cropper=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/image_cropper-1.0.2/
-image_picker=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.1+2/
-onesignal=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/onesignal-1.1.0/
+cloud_firestore=/home/eliasjr/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.12.9/
+firebase_auth=/home/eliasjr/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.14.0+1/
+firebase_core=/home/eliasjr/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.0+8/
+firebase_storage=/home/eliasjr/.pub-cache/hosted/pub.dartlang.org/firebase_storage-3.0.5/
+image_cropper=/home/eliasjr/.pub-cache/hosted/pub.dartlang.org/image_cropper-1.0.2/
+image_picker=/home/eliasjr/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.1+2/
+onesignal=/home/eliasjr/.pub-cache/hosted/pub.dartlang.org/onesignal-1.1.0/
