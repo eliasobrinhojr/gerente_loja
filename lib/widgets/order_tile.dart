@@ -8,7 +8,7 @@ class OrderTile extends StatelessWidget {
   OrderTile(this.order);
 
   final states = [
-    "",
+    "Fila",
     "Em preparação",
     "Em transporte",
     "Aguardando Entrega",
@@ -60,7 +60,7 @@ class OrderTile extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       FlatButton(
-                        onPressed: order.data["status"] == 0 || order.data["status"] > 1
+                        onPressed: order.data["status"] == 0
                             ? () {
                                 Firestore.instance
                                     .collection("users")
