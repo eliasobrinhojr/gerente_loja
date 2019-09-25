@@ -18,3 +18,11 @@ android/local\.properties
 .packages
 
 .flutter-plugins
+
+\.dart_tool/pub/bin/flutter_launcher_icons/
+
+\.dart_tool/pub/bin/
+
+ios/Flutter/
+
+*.lock
