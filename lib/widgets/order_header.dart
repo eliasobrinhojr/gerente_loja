@@ -19,7 +19,7 @@ class OrderHeader extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Text("${_user["name"]} - ${_user["phone"]}"),
+              Text("${_user["name"]} - ${_user["phone"]} \n${_user["phone2"]}"),
               Text("${_user["address"]}"),
             ],
           ),

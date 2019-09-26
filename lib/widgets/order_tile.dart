@@ -45,8 +45,8 @@ class OrderTile extends StatelessWidget {
                       var index = order.data["products"].indexOf(p);
 
                       return ListTile(
-                        title: Text(
-                            p["product"]["title"] + " " + "${p["size"]}"),
+                        title:
+                            Text(p["product"]["title"] + " " + "${p["size"]}"),
                         subtitle: Text(p["category"] + "/" + p["pid"]),
                         trailing: Text(
                           "x${p["quantity"].toString()}",
@@ -62,13 +62,39 @@ class OrderTile extends StatelessWidget {
                       FlatButton(
                         onPressed: order.data["status"] == 0
                             ? () {
-                                Firestore.instance
-                                    .collection("users")
-                                    .document(order["clientId"])
-                                    .collection("orders")
-                                    .document(order.documentID)
-                                    .delete();
-                                order.reference.delete();
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    // return object of type Dialog
+                                    return AlertDialog(
+                                      title: new Text("Confirmar"),
+                                      content: new Text(
+                                          "Realmente excluir pedido ?"),
+                                      actions: <Widget>[
+                                        // usually buttons at the bottom of the dialog
+                                        new FlatButton(
+                                          child: new Text("Cancelar"),
+                                          onPressed: () {
+                                            Navigator.of(context).pop();
+                                          },
+                                        ),
+
+                                        new FlatButton(
+                                          child: new Text("Sim"),
+                                          onPressed: () {
+                                            Firestore.instance
+                                                .collection("users")
+                                                .document(order["clientId"])
+                                                .collection("orders")
+                                                .document(order.documentID)
+                                                .delete();
+                                            order.reference.delete();
+                                          },
+                                        ),
+                                      ],
+                                    );
+                                  },
+                                );
                               }
                             : null,
                         textColor: Colors.red,
