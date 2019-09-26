@@ -32,7 +32,6 @@ dependencies:
   rxdart: ^0.22.1
   bloc_pattern: ^1.5.2
   shimmer: ^1.0.0
-  onesignal: ^1.0.5
   flutter_launcher_icons: ^0.7.3
 
 dev_dependencies:
