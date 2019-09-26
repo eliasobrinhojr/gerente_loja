@@ -1,6 +1,8 @@
-cloud_firestore=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.12.9/
-firebase_auth=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.14.0+1/
-firebase_core=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.0+8/
-firebase_storage=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-3.0.5/
+cloud_firestore=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-0.12.9+4/
+firebase_auth=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_auth-0.14.0+5/
+firebase_core=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_core-0.4.0+9/
+firebase_messaging=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_messaging-5.1.6/
+firebase_storage=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/firebase_storage-3.0.6/
+flutter_local_notifications=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-0.8.3/
 image_cropper=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/image_cropper-1.0.2/
-image_picker=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.1+2/
+image_picker=/home/sys00/Documentos/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.1+4/

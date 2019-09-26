@@ -1,5 +1,7 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:gerente_loja/blocs/orders_bloc.dart';
 import 'package:gerente_loja/blocs/user_bloc.dart';
@@ -20,13 +22,29 @@ class _HomeScreenState extends State<HomeScreen> {
   UserBloc _userBloc;
   OrdersBloc _ordersBloc;
 
+  FirebaseMessaging _firebaseMessaging;
+  FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin;
+
   @override
   void initState() {
     super.initState();
     _pageController = PageController();
     _userBloc = UserBloc();
     _ordersBloc = OrdersBloc();
+    setUpNotification();
   }
+
+  void setUpNotification() {
+    _firebaseMessaging = FirebaseMessaging();
+    flutterLocalNotificationsPlugin = new FlutterLocalNotificationsPlugin();
+    var android = new AndroidInitializationSettings('@mipmap/ic_launcher');
+    var iOS = new IOSInitializationSettings();
+    var initSetttings = new InitializationSettings(android, iOS);
+    flutterLocalNotificationsPlugin.initialize(initSetttings,
+        onSelectNotification: onSelectNotification);
+  }
+
+  Future onSelectNotification(String payload) {}
 
   @override
   Widget build(BuildContext context) {
@@ -125,6 +143,49 @@ class _HomeScreenState extends State<HomeScreen> {
       default:
         return null;
     }
+  }
+
+
+  void firebaseCloudMessagingListeners() {
+    _firebaseMessaging.getToken().then((token) {
+     // if (isLoggedIn()) updateToken(token);
+    });
+    _firebaseMessaging.configure(
+      onMessage: (Map<String, dynamic> message) async {
+        print("onMessage: $message");
+        showNotification(
+            message['notification']['title'], message['notification']['body']);
+      },
+      onLaunch: (Map<String, dynamic> message) async {
+        print("onLaunch: $message");
+        showNotification(
+            message['notification']['title'], message['notification']['body']);
+      },
+      onResume: (Map<String, dynamic> message) async {
+        print("onResume: $message");
+        showNotification(
+            message['notification']['title'], message['notification']['body']);
+      },
+    );
+    _firebaseMessaging.requestNotificationPermissions(
+        const IosNotificationSettings(sound: true, badge: true, alert: true));
+    _firebaseMessaging.onIosSettingsRegistered
+        .listen((IosNotificationSettings settings) {
+      print("Settings registered: $settings");
+    });
+    _firebaseMessaging.getToken().then((String token) {
+      assert(token != null);
+      print(token);
+    });
+  }
+
+  showNotification(String title, String body) async {
+    var android = new AndroidNotificationDetails(
+        'channel id', 'channel NAME', 'CHANNEL DESCRIPTION',
+        priority: Priority.Max, importance: Importance.Max);
+    var iOS = new IOSNotificationDetails();
+    var platform = new NotificationDetails(android, iOS);
+    await flutterLocalNotificationsPlugin.show(0, title, body, platform);
   }
 
   @override
