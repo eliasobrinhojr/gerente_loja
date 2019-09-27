@@ -88,8 +88,8 @@ class OrderTile extends StatelessWidget {
                                                 .collection("orders")
                                                 .document(order.documentID)
                                                 .delete();
-                                            await order.reference.delete();
                                             Navigator.of(context).pop();
+                                            await order.reference.delete();
                                           },
                                         ),
                                       ],
