@@ -158,8 +158,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
 
   void firebaseCloudMessagingListeners() {
-    _firebaseMessaging.getToken().then((token) {
-     // if (isLoggedIn()) updateToken(token);
+    _firebaseMessaging.getToken().then((token) async {
+      await updateToken(token);
     });
     _firebaseMessaging.configure(
       onMessage: (Map<String, dynamic> message) async {
@@ -183,11 +183,6 @@ class _HomeScreenState extends State<HomeScreen> {
     _firebaseMessaging.onIosSettingsRegistered
         .listen((IosNotificationSettings settings) {
       print("Settings registered: $settings");
-    });
-    _firebaseMessaging.getToken().then((String token) {
-      assert(token != null);
-      print(token);
-
     });
   }
 
