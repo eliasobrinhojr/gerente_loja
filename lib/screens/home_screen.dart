@@ -1,8 +1,10 @@
 import 'package:bloc_pattern/bloc_pattern.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:gerente_loja/blocs/login_bloc.dart';
 import 'package:gerente_loja/blocs/orders_bloc.dart';
 import 'package:gerente_loja/blocs/user_bloc.dart';
 import 'package:gerente_loja/tabs/orders_tab.dart';
@@ -145,6 +147,15 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+  updateToken(token) async {
+    DocumentSnapshot docUser = await Firestore.instance
+        .collection("users")
+        .document("hNthpVRUHGVKD7Z4Jap4rcMhFB73")
+        .get();
+    docUser.data["token"] = token;
+    await docUser.reference.updateData(docUser.data);
+  }
+
 
   void firebaseCloudMessagingListeners() {
     _firebaseMessaging.getToken().then((token) {
@@ -176,6 +187,7 @@ class _HomeScreenState extends State<HomeScreen> {
     _firebaseMessaging.getToken().then((String token) {
       assert(token != null);
       print(token);
+
     });
   }
 

@@ -10,9 +10,7 @@ class ProductBloc extends BlocBase {
   Map<String, dynamic> unsavedData;
 
   final _dataController = BehaviorSubject<Map>();
-
   final _loadingController = BehaviorSubject<bool>();
-
   final _createdController = BehaviorSubject<bool>();
 
   Stream<Map> get outData => _dataController.stream;
