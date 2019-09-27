@@ -4,7 +4,6 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
-import 'package:gerente_loja/blocs/login_bloc.dart';
 import 'package:gerente_loja/blocs/orders_bloc.dart';
 import 'package:gerente_loja/blocs/user_bloc.dart';
 import 'package:gerente_loja/tabs/orders_tab.dart';
@@ -36,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
     setUpNotification();
   }
 
-  void setUpNotification() {
+  void setUpNotification() async {
     _firebaseMessaging = FirebaseMessaging();
     flutterLocalNotificationsPlugin = new FlutterLocalNotificationsPlugin();
     var android = new AndroidInitializationSettings('@mipmap/ic_launcher');
@@ -44,6 +43,9 @@ class _HomeScreenState extends State<HomeScreen> {
     var initSetttings = new InitializationSettings(android, iOS);
     flutterLocalNotificationsPlugin.initialize(initSetttings,
         onSelectNotification: onSelectNotification);
+
+    await updateToken(
+        await _firebaseMessaging.getToken().then((value) => value));
   }
 
   Future onSelectNotification(String payload) {}
@@ -148,6 +150,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   updateToken(token) async {
+    print(token);
     DocumentSnapshot docUser = await Firestore.instance
         .collection("users")
         .document("hNthpVRUHGVKD7Z4Jap4rcMhFB73")
@@ -156,11 +159,7 @@ class _HomeScreenState extends State<HomeScreen> {
     await docUser.reference.updateData(docUser.data);
   }
 
-
   void firebaseCloudMessagingListeners() {
-    _firebaseMessaging.getToken().then((token) async {
-      await updateToken(token);
-    });
     _firebaseMessaging.configure(
       onMessage: (Map<String, dynamic> message) async {
         print("onMessage: $message");

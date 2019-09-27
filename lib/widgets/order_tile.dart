@@ -81,14 +81,15 @@ class OrderTile extends StatelessWidget {
 
                                         new FlatButton(
                                           child: new Text("Sim"),
-                                          onPressed: () {
+                                          onPressed: () async {
                                             Firestore.instance
                                                 .collection("users")
                                                 .document(order["clientId"])
                                                 .collection("orders")
                                                 .document(order.documentID)
                                                 .delete();
-                                            order.reference.delete();
+                                            await order.reference.delete();
+                                            Navigator.of(context).pop();
                                           },
                                         ),
                                       ],
