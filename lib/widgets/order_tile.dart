@@ -42,8 +42,6 @@ class OrderTile extends StatelessWidget {
                   Column(
                     mainAxisSize: MainAxisSize.min,
                     children: order.data["products"].map<Widget>((p) {
-                      var index = order.data["products"].indexOf(p);
-
                       return ListTile(
                         title:
                             Text(p["product"]["title"] + " " + "${p["size"]}"),
@@ -65,13 +63,11 @@ class OrderTile extends StatelessWidget {
                                 showDialog(
                                   context: context,
                                   builder: (BuildContext context) {
-                                    // return object of type Dialog
                                     return AlertDialog(
                                       title: new Text("Confirmar"),
                                       content: new Text(
                                           "Realmente excluir pedido ?"),
                                       actions: <Widget>[
-                                        // usually buttons at the bottom of the dialog
                                         new FlatButton(
                                           child: new Text("Cancelar"),
                                           onPressed: () {
