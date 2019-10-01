@@ -1,9 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:gerente_loja/blocs/user_bloc.dart';
+import 'package:gerente_loja/services/notification_service.dart';
 import 'package:gerente_loja/widgets/order_header.dart';
 
 class OrderTile extends StatelessWidget {
   final DocumentSnapshot order;
+
+  NotificationService _notificationService;
+
+  UserBloc _userBloc = new UserBloc();
 
   OrderTile(this.order);
 
@@ -74,7 +80,6 @@ class OrderTile extends StatelessWidget {
                                             Navigator.of(context).pop();
                                           },
                                         ),
-
                                         new FlatButton(
                                           child: new Text("Sim"),
                                           onPressed: () async {
@@ -112,6 +117,10 @@ class OrderTile extends StatelessWidget {
                             ? () {
                                 order.reference.updateData(
                                     {"status": order.data["status"] + 1});
+
+                                _notificationService = new NotificationService(_userBloc.getUser(this.order.data['clientId'])["token"]);
+                                print(order.data["status"]);
+                                if(order.data["status"] == 2) _notificationService.sendRequest("Seu pedido saiu para entrega !", "Opa :D");
                               }
                             : null,
                         textColor: Colors.green,
