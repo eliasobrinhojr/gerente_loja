@@ -115,12 +115,50 @@ class OrderTile extends StatelessWidget {
                       FlatButton(
                         onPressed: order.data["status"] < 4
                             ? () {
-                                order.reference.updateData(
-                                    {"status": order.data["status"] + 1});
+                                if (order.data["status"] == 2) {
+                                  _notificationService =
+                                      new NotificationService(_userBloc.getUser(
+                                          this
+                                              .order
+                                              .data['clientId'])["token"]);
 
-                                _notificationService = new NotificationService(_userBloc.getUser(this.order.data['clientId'])["token"]);
-                                print(order.data["status"]);
-                                if(order.data["status"] == 2) _notificationService.sendRequest("Seu pedido saiu para entrega !", "Opa :D");
+                                  showDialog(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return AlertDialog(
+                                        title: new Text("Confirmar"),
+                                        content:
+                                            new Text("Saída para entrega ?"),
+                                        actions: <Widget>[
+                                          new FlatButton(
+                                            child: new Text("Cancelar"),
+                                            onPressed: () {
+                                              Navigator.of(context).pop();
+                                            },
+                                          ),
+                                          new FlatButton(
+                                            child: new Text("Sim"),
+                                            onPressed: () async {
+                                              order.reference.updateData({
+                                                "status":
+                                                    order.data["status"] + 1
+                                              });
+
+                                              _notificationService.sendRequest(
+                                                  "Seu pedido saiu para entrega !",
+                                                  "Opa :D");
+
+                                              Navigator.of(context).pop();
+                                            },
+                                          ),
+                                        ],
+                                      );
+                                    },
+                                  );
+                                } else {
+                                  order.reference.updateData(
+                                      {"status": order.data["status"] + 1});
+                                }
                               }
                             : null,
                         textColor: Colors.green,
